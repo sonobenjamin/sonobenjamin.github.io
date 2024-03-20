@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  .hidden {
+    display: none;
+  }
+</style>
+<body>
+<h1>MIND THE STEM GAP</h1>
+<p>Questo progetto testimonia il fatto che le donne possano fare la
+differenza! Sapete quante scienziate hanno scoperto e inventato un
+sacco di cose che usiamo ogni giorno? Scommetto che a scuola quando
+sbagli a scrivere a qualcosa per fare tutto in modo ordinato e pulito usi il bianchetto invece di fare una stricca, ecco questo è
+stato inventato da Bette Nesmish Graham, ma di donne come lei ce ne
+sono state migliaia!</p>
+<p>CHI SIAMO?? LA III E! Non dimenticateci, un giorno ci ricorderete…</p>
+<p>Barut Matilde</p>
+<p>Benakil Rania</p>
+<p>Berginc Micael</p>
+<p>Blasevich Laura</p>
+<p>Danieli Thomas</p>
+<p>Del Rovere Aurora</p>
+<p>Ferrante Emma</p>
+<p>Fornasaro Luca</p>
+<p>Gaio Giorgio</p>
+<p>Giannazzo Vittoria</p>
+<p>Grassi Nicola</p>
+<p>Ilas Sophie</p>
+<p>Leban Lorenzo</p>
+<p>Nikolic' Andrija</p>
+<p>Nussdorfer Gaia</p>
+<p>Pow Benjamin</p>
+<p>Raggi Stefano</p>
+<p>Sannino Sara</p>
+<p>Severin Emma</p>
+<p>Sirbu Ianis</p>
+<p>Vasilescu Fabian</p>
+  <h1>Quale scienziata sei?</h1>
+    <p>Rispondi alle seguenti domande per testare le tue conoscenze.</p>
+    <div id="d1">
+        <form id="domanda1">
+            <ul>
+                <li>
+                    <p>Cosa ti piace di più?</p>
+                    <ul id="risposte">
+                        <li><input type="radio" id="Matematica" name="ciao" value="A"> Matematica</li>
+                        <li><input type="radio" id="Scienze" name="ciao" value="B"> Scienze</li>
+                    </ul>
+                </li>
+                </ul>
+           </form>
+    </div>
+      <div id="d2a" class="hidden">
+        <form id="domanda2a">
+            <ul>
+                <li>
+                    <p>Cosa preferisci?</p>
+                    <ul id="risposte">
+                        <li><input type="radio" id="Algebra" name="ciao" value="A"> Algebra</li>
+                        <li><input type="radio" id="Geometria" name="ciao" value="B"> Geometria</li>
+                    </ul>
+                </li>
+                </ul>
+           </form>
+    </div>
+    <div id="d2b" class="hidden">
+      <form id="domanda2b">
+            <ul>
+                <li>
+                    <p>Cosa preferisci?</p>
+                    <ul id="risposte">
+                        <li><input type="radio" id="Fisica" name="ciao" value="A"> Fisica</li>
+                        <li><input type="radio" id="Chimica" name="ciao" value="B"> Chimica</li>
+                        <li><input type="radio" id="Biologia" name="ciao" value="C"> Biologia</li>
+                        <li><input type="radio" id="Astronomia" name="ciao" value="D"> Astronomia</li>
+                    </ul>
+                </li>
+                </ul>
+        </form>
+    </div>
+                      <button id="pulsante-risultato" onclick="showHiddenDiva(); showHiddenDivb();">Scegli</button>
+  <script>
+function showHiddenDiva() {
+  var choice = document.getElementById('Matematica');
+  if (choice.checked) {
+    var hiddenDiv = document.getElementById('d2a');
+    hiddenDiv.classList.remove('hidden');
+  } 
+    else {
+        var hiddenDiv = document.getElementById('d2a');
+    hiddenDiv.classList.add('hidden'); 
+  }
+}
+</script>
+    <script>
+function showHiddenDivb() {
+  var choice = document.getElementById('Scienze');
+  if (choice.checked) {
+    var hiddenDiv = document.getElementById('d2b');
+    hiddenDiv.classList.remove('hidden');
+  } 
+  else {
+        var hiddenDiv = document.getElementById('d2b');
+    hiddenDiv.classList.add('hidden'); 
+  }
+}
+</script>
+</body>
+</html>
